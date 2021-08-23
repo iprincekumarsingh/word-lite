@@ -3,6 +3,15 @@
      padding: 0;
      /* text-decoration: none; */
      box-sizing: border-box;
+
+}
+body{
+     overflow-x: hidden;
+   scrollbar-width: none;
+   
+}
+::-webkit-scrollbar{
+     display: none;
 }
 .navbar{
      display: flex;
