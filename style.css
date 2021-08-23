@@ -8,7 +8,7 @@
      display: flex;
      align-items: center;
      padding: 20px;
-     justify-content: space-around;
+     justify-content: space-between;
      background-color: teal;
 }
 nav ul li{
@@ -90,6 +90,7 @@ button{
      text-transform: uppercase;
 }
 .switch {
+     outline: none;
      position: relative;
      display: inline-block;
      width: 60px;
@@ -162,6 +163,10 @@ button{
           outline: none;
           color: white;
           cursor: pointer;
+
+      }
+      button{
+           order: -1;
       }
      
 }
