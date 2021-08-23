@@ -1,8 +1,10 @@
      function converToUpperCase() {
-     var upCase = document.getElementById("ptext").classList.toggle("upperCase")
+     document.getElementById("ptext").classList.toggle("upperCase")
    
 
      document.getElementById("previewtext").classList.toggle("upperCase")
+     document.getElementById("activated_btn_Upper").classList.toggle("active-btn")
+
      // var ccc = document.getElementById("ptext").value = c
      // console.log(ccc);
      }
@@ -36,10 +38,23 @@
      function bold(){
           var boldtext = document.getElementById("ptext")
           boldtext.classList.toggle("boldfont")
-
           document.getElementById("previewtext").classList.toggle("boldfont")
+          document.getElementById("activated_btn_Bold").classList.toggle("active-btn")
+
      }
      function italic(){
           document.getElementById("ptext").classList.toggle("italicFont")
           document.getElementById("previewtext").classList.toggle("italicFont")
+          document.getElementById("activated_btn_Italic").classList.toggle("active-btn")
+
+          activated_btn_Italic
+
+     }
+     function lCase(){
+          document.getElementById("ptext").classList.toggle("lowerCase")
+          document.getElementById("previewtext").classList.toggle("lowerCase")
+          document.getElementById("activated_btn_Lower").classList.toggle("active-btn")
+          document.getElementById("activated_btn_Lower").innerText="Active"
+          
+          // document.getElementById("previewtext").classList.toggle("lowerCase")
      }

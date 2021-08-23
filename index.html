@@ -5,7 +5,7 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Text-Utils</title>
+     <title>Word-Lite by Prince kumar singh</title>
      <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,8 +19,9 @@
 
                     <!-- <li><a href="">Home</a></li> -->
                     <li><label class="switch">
+                         <label for=""> </label>
                          <input onclick="darkmode()" type="checkbox">
-                         <span class="slider round"></span>
+                         <span class="slider round"> </span>
                        </label></li>
                </ul>
           </nav>
@@ -39,16 +40,28 @@
                <p id="counttext"></p>
           </div>
           <div class="switches">
-               <button onclick="converToUpperCase()">UpperCase</button>
-               <button>Lower Case</button>
-               <button onclick="bold()">Bold</button>
-               <button onclick="italic()">Italic</button>
+               <button id="activated_btn_Upper" onclick="converToUpperCase()">UpperCase</button>
+               <button id="activated_btn_Lower" onclick="lCase()">Lower Case</button>
+               <button  id="activated_btn_Bold"onclick="bold()">Bold</button>
+               <button id="activated_btn_Italic" onclick="italic()">Italic</button>
                <button onclick="clr()">Clear Text</button>
                <button onclick="clr()">Copy Text</button>
 
           </div>
+
+          <div class="point">
+               <h1>Point`s to remember</h1>
+               <ul>
+                    <li>Active buttons will show green in color</li>
+                    
+               </ul>
+          </div>
+         
           
      </div>
+     <footer>
+          <p>Design and Devloped by -  <b>Prince kumar singh</b></p>
+     </footer>
      </script>
      <script src="script.js"></script>
 </body>

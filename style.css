@@ -1,15 +1,17 @@
 *{
      margin: 0;
      padding: 0;
-     text-decoration: none;
+     /* text-decoration: none; */
      box-sizing: border-box;
 }
 .navbar{
      display: flex;
      align-items: center;
      padding: 20px;
+     position: sticky;
+     top: 0;
      justify-content: space-between;
-     background-color: teal;
+     background-color: #03203C;
 }
 nav ul li{
      display: inline-block;
@@ -21,6 +23,7 @@ nav ul li a{
      cursor: pointer;
 }
 .main{
+     height: 83vh;
      margin-top: 20px;
      align-items: center;
     /* display: flex; */
@@ -48,6 +51,9 @@ nav ul li a{
 .switches{
      margin: 10px;
 }
+.logo{
+     color: white;
+}
 button{
      background-color: blueviolet;
      /* width: 200px; */
@@ -68,7 +74,7 @@ button{
      border-bottom: 1px solid black;
 }
 .dark-mode{
-     background-color: rgb(32, 32, 32);
+     background-color: #242B2E;
      color: white;
      /* transition: .4s; */
 }
@@ -78,7 +84,7 @@ button{
      color: white;
 }
 .nav-dark{
-     background-color: rgb(51, 51, 51);color: white;
+     background-color: #03203C;
 }
 .boldfont{
      font-weight: 900;
@@ -88,6 +94,21 @@ button{
 }
 .upperCase{
      text-transform: uppercase;
+}
+.lowerCase{
+     text-transform: lowercase;
+}
+.active-btn{
+     background-color: rgb(9, 214, 9);
+}
+footer{
+     background-color: #03203C;
+     color: white;
+     text-align: center;
+     padding: 22px;
+     font-size: 16px;
+
+
 }
 .switch {
      outline: none;
@@ -149,6 +170,10 @@ button{
    .slider.round:before {
      border-radius: 50%;
    }
+   .point ul li{
+        margin: 20px;
+     list-style-type: square;
+   }
 @media screen and (max-width:768px) {
      
      button{
@@ -167,6 +192,15 @@ button{
       }
       button{
            order: -1;
+      }
+      footer{
+                
+          bottom: 0;
+          position: relative;
+         
+          top: 0;
+          margin-top: 400px;
+       
       }
      
 }
