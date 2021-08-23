@@ -59,6 +59,12 @@ nav ul li a{
 }
 .switches{
      margin: 10px;
+     align-items: center;
+     display: flex;
+     justify-content: center;
+}
+.switches button{
+     border-radius: 10px;
 }
 .logo{
      color: white;
@@ -198,6 +204,13 @@ footer{
           color: white;
           cursor: pointer;
 
+      }
+      .switches{
+           flex-direction: column;
+           border-radius: 10px;
+      }
+      .switches button{
+           border-radius: 10px;
       }
       button{
            order: -1;
