@@ -1,0 +1,108 @@
+*{
+     margin: 0;
+     padding: 0;
+     text-decoration: none;
+     box-sizing: border-box;
+}
+.navbar{
+     display: flex;
+     align-items: center;
+     padding: 20px;
+     justify-content: space-around;
+     background-color: teal;
+}
+nav ul li{
+     display: inline-block;
+}
+nav ul li a{
+     color: white;
+     margin-right: 10px;
+     font-size: 20px;
+     cursor: pointer;
+}
+.main{
+     margin-top: 20px;
+     align-items: center;
+    /* display: flex; */
+    justify-content: center;
+}
+.textinput{
+     margin: 10px;
+     border: 1px solid black;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     /* background-color: tomato; */
+     border-radius: 20px;
+     height: 30vh;
+}
+.textinput textarea{
+     outline: none;
+     resize: none;
+     border: none;
+     padding: 20px;
+     width: 97%;
+     height: 100%;
+     font-size: 18px;
+}
+.switches{
+     margin: 10px;
+}
+button{
+     background-color: blueviolet;
+     /* width: 200px; */
+     padding: 20px 100px;
+     border-radius: 10px;
+     border: none;
+     margin: 10px;
+     font-size: 20px;
+     outline: none;
+     color: white;
+     cursor: pointer;
+}
+.preview{
+     margin: 10px;
+     width: auto;
+     box-sizing: border-box;
+     font-size: 20px;
+     border-bottom: 1px solid black;
+}
+.dark-mode{
+     background-color: rgb(32, 32, 32);
+     color: white;
+     transition: .4s;
+}
+.dark-mode textarea{
+     /* border: 1px solid rgb(167, 167, 167); */
+     background-color: transparent;
+     color: white;
+}
+.nav-dark{
+     background-color: rgb(51, 51, 51);color: white;
+}
+.boldfont{
+     font-weight: 900;
+}
+.italicFont{
+     font-style: italic;
+}
+.upperCase{
+     text-transform: uppercase;
+}
+@media screen and (max-width:768px) {
+     
+     button{
+          /* background-color: blueviolet;
+          width: 100%; */
+          width: 95%;
+          padding: 20px 100px;
+          border-radius: 10px;
+          border: none;
+          margin-top: 10px;
+          font-size: 20px;
+          outline: none;
+          color: white;
+          cursor: pointer;
+      }
+     
+}

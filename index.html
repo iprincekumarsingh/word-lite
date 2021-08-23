@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Text-Utils</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <div id="nav" class="navbar">
+          <div class="logo">
+               <h1>Word - Lite</h1>
+          </div>
+          <nav>
+               <ul>
+
+                    <!-- <li><a href="">Home</a></li> -->
+                    <li><a onclick="darkmode()">Switch Theme</a></li>
+               </ul>
+          </nav>
+     </div>
+     <div class="main">
+          <div class="textinput">
+               <textarea id="ptext" onkeyup="preview()" placeholder="Enter the Paragraph" cols="30"
+                    rows="10"></textarea>
+          </div>
+          <div class="switches">
+               <button onclick="converToUpperCase()">UpperCase</button>
+               <button>Lower Case</button>
+               <button onclick="bold()">Bold</button>
+               <button onclick="italic()">Italic</button>
+               <button onclick="clr()">Clear Text</button>
+               <button onclick="clr()">Copy Text</button>
+
+          </div>
+          <div class="preview">
+               <h1>Preview</h1>
+               <p id="previewtext"></p>
+          </div>
+          <div class="preview">
+               <h1>Count`s</h1>
+               <p id="counttext"></p>
+          </div>
+     </div>
+     </script>
+     <script src="script.js"></script>
+</body>
+
+</html>
