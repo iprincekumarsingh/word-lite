@@ -1,5 +1,8 @@
 
-               function alert (msg,timet){ document.getElementById("nav").insertAdjacentHTML("afterend",`<div id="alertmsg" class="alert alert-success" role="alert">${msg}</div>`),setTimeout(() => {document.getElementById("alertmsg").remove()}, `${timet}`);}
+               function alertm (msg,timet){ 
+                    document.getElementById("nav").insertAdjacentHTML("afterend",`<div id="alertmsg" class="alert alert-success" role="alert">${msg}</div>`)
+               
+                    setTimeout(() => {document.getElementById("alertmsg").remove()}, `${timet}`);}
 
                // function notifymsg() {
                //      document.getElementById("textareabox").insertAdjacentHTML("afterend",`   <div id="n-msg">
@@ -67,13 +70,31 @@
 
                }
                function converToUpperCase() {
-                    enteredValue.classList.toggle("upperCase")
-                    userPreviewText.classList.toggle("upperCase")
-                    alert("Text Converted into bold",2000)
-                    activated_btn_Upper.classList.toggle("active-btn")
+                   
+                  
+if (document.getElementById("activated_btn_Lower").classList.contains("active-btn") === true ) {
+     
+     alert("Close Lower Case")
+}
+else{
+     enteredValue.classList.toggle("upperCase")
+     userPreviewText.classList.toggle("upperCase")
+     // alert("Text Converted into UpperCase",2000)
+     activated_btn_Upper.classList.toggle("active-btn")
+
+     if (document.getElementById("activated_btn_Upper").innerText ==="UpperCase") {
+          document.getElementById("activated_btn_Upper").innerText ="Active Upper-Case"
+     }
+     else{
+          document.getElementById("activated_btn_Upper").innerText ="UpperCase"
+
+     }
+}
 
                }
+     
 
+               
                function clr() {
                enteredValue.value = ""
                userPreviewText.innerText = ""
@@ -95,8 +116,15 @@
                enteredValue.classList.toggle("boldfont")
                userPreviewText.classList.toggle("boldfont")  
                activated_btn_Bold.classList.toggle("active-btn")
+               if (document.getElementById("activated_btn_Bold").innerText ==="Bold") {
+                    document.getElementById("activated_btn_Bold").innerText ="Active Bold"
+               }
+               else{
+                    document.getElementById("activated_btn_Bold").innerText ="Bold"
 
-               alert("Text Converted into bold",2000)
+               }
+          
+             
 
                }
 
@@ -104,16 +132,32 @@
                enteredValue.classList.toggle("italicFont")
                userPreviewText.classList.toggle("italicFont")
                activated_btn_Italic.classList.toggle("active-btn")
+               if (document.getElementById("activated_btn_Italic").innerText ==="Italic") {
+                    document.getElementById("activated_btn_Italic").innerText ="Active Italic"
+               }
+               else{
+                    document.getElementById("activated_btn_Italic").innerText ="Italic"
 
-               alert("Italic",2000)
+               }
                }
 
                function lCase(){
-               enteredValue.classList.toggle("lowerCase")
-               userPreviewText.classList.toggle("lowerCase")
-               activated_btn_Lower.classList.toggle("active-btn")
-
-               alert("Text Converted into lower Case",2000)
+                    if (document.getElementById("activated_btn_Upper").classList.contains("active-btn") === true ) {
+     alert("Close Upper Case ")
+                    }
+                    else{
+                         enteredValue.classList.toggle("lowerCase")
+                         userPreviewText.classList.toggle("lowerCase")
+                         activated_btn_Lower.classList.toggle("active-btn")
+                         if (document.getElementById("activated_btn_Lower").innerText ==="Lower Case") {
+                              document.getElementById("activated_btn_Lower").innerText ="Active Lower Case"
+                         }
+                         else{
+                              document.getElementById("activated_btn_Lower").innerText ="Lower Case"
+          
+                         }
+                    }    
+               // alert("Text Converted into lower Case",2000)
                }
 
                function bluee(){
@@ -141,6 +185,7 @@
                     document.body.style.backgroundColor="#242B2E"
                     document.body.style.color="white"
                     document.getElementById("ptext").style.color="black"
+                    
                }
                function pink(){
                     document.body.style.removeProperty("background-color")
@@ -153,14 +198,17 @@
                }
                function about(){
                     document.getElementById("cc").style.display="none"
-
+                    
                     document.getElementById("main").style.display="none"
+                    document.getElementById("switch_button").style.display="none"
 
                     document.getElementById("about-main").style.display="block"
                }
                function home(){
                     document.getElementById("about-main").style.display="none"
                     document.getElementById("cc").style.display="none"
+
+                    document.getElementById("switch_button").style.display="block"
 
                     document.getElementById("main").style.display="block"
                }
