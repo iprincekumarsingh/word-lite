@@ -1,0 +1,65 @@
+[33mcommit b9a3a89311dc1fc67c7c2fabc7414e030118a02f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Prince Kumar Singh <princekumar2000.pks@gmail.com>
+Date:   Wed Aug 25 09:50:12 2021 +0530
+
+    Re-design v2
+
+[33mcommit 8624e17f47a7410854e22d25203c6bbb1be46738[m
+Author: Prince Kumar Singh <princekumar2000.pks@gmail.com>
+Date:   Mon Aug 23 11:00:47 2021 +0530
+
+    organized files
+
+[33mcommit 299d2160fe5ac72c439cd5c0d0cd6a01fc93b656[m
+Author: Prince Kumar Singh <princekumar2000.pks@gmail.com>
+Date:   Mon Aug 23 10:57:46 2021 +0530
+
+    readme.md file added
+
+[33mcommit 1d76e41d6e4971f1c55d0577eefc6aa04f69aa6b[m
+Author: Prince Kumar Singh <princekumar2000.pks@gmail.com>
+Date:   Mon Aug 23 10:53:59 2021 +0530
+
+    footer removed
+
+[33mcommit 0535bcebf7b039f119a3a4aacc2bfe6d02310d44[m
+Author: Prince Kumar Singh <princekumar2000.pks@gmail.com>
+Date:   Mon Aug 23 10:51:56 2021 +0530
+
+    beta2.1
+
+[33mcommit a2e7d0ebf4f7ddb395e2c974236ff5c2a29c4d08[m
+Author: Prince Kumar Singh <princekumar2000.pks@gmail.com>
+Date:   Mon Aug 23 10:17:51 2021 +0530
+
+    alert msg added
+
+[33mcommit 40af7f8d09938f88a301c10d6143caa4b1834dd5[m
+Author: Prince Kumar Singh <princekumar2000.pks@gmail.com>
+Date:   Mon Aug 23 09:31:34 2021 +0530
+
+    scroll bar hidden
+
+[33mcommit ecf765aa607e1782c35376d162e2c8e6903c9f03[m
+Author: Prince Kumar Singh <princekumar2000.pks@gmail.com>
+Date:   Mon Aug 23 09:26:39 2021 +0530
+
+    v2.0.0
+
+[33mcommit dd979416f80fc3f32269033368691d95b5306859[m
+Author: Prince Kumar Singh <princekumar2000.pks@gmail.com>
+Date:   Mon Aug 23 08:32:37 2021 +0530
+
+    fix preview
+
+[33mcommit cfc5460d740316a3aa0938e2d2ab5b7fb1fed42b[m
+Author: Prince Kumar Singh <princekumar2000.pks@gmail.com>
+Date:   Mon Aug 23 08:22:05 2021 +0530
+
+    added switch
+
+[33mcommit 88d6a2fd279107bb58dc450fa31797cf3433bb72[m
+Author: Prince Kumar Singh <princekumar2000.pks@gmail.com>
+Date:   Mon Aug 23 08:08:46 2021 +0530
+
+    first commit

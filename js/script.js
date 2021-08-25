@@ -18,7 +18,7 @@
                var enteredValue =document.getElementById("ptext")
                var userPreviewText =document.getElementById("previewtext")
                var activated_btn_Upper=  document.getElementById("activated_btn_Upper")
-               var activated_btn_Lower =document.getElementById("activated_btn_Lower")
+               let activated_btn_Lower =document.getElementById("activated_btn_Lower")
                var activated_btn_Bold =document.getElementById("activated_btn_Bold")
                var activated_btn_Italic = document.getElementById("activated_btn_Italic")
                var  activate_btn_clearText =  document.getElementById("activate_btn_clearText")
