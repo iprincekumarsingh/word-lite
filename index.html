@@ -1,141 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Word-Lite by Prince kumar singh</title>
-     <link rel="stylesheet" href="css/style.css">
-     <!-- CSS only -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-</head>
-
-<body>
-     <div id="nav" class="navbar">
-          <div class="logo">
-               <h1>Word - Lite</h1>
-
-          </div>
-          <div class="menu-link">
-               <!-- <li onclick="home()">Home</li> -->
-               <!-- <li onclick="about()">About</li> -->
-               <!-- <li onclick="cc()">Contact</li> -->
-               
-
-          </div>
-
-          <nav>
-               <div class="color">
-                    <div onclick="bluee()" class="blue mr-10px"></div>
-                    <div onclick="black()" class="black mr-10px"></div>
-                    <div onclick="yellow()" class="yellow mr-10px"></div>
-                    <div onclick="white()" class="white mr-10px"></div>
-                    <div onclick="pink()" class="pink mr-10px"></div>
-
-
-                    <!-- <div><label class="switch">
-                         <label for=""> </label>
-                         <input onclick="darkmode()" type="checkbox">
-                         <span class="slider round"> </span>
-                    </label></div> -->
-
-
-               </div>
-               <!-- <ul>
-                    
-                         <label for=""> </label>
-                         <input onclick="darkmode()" type="checkbox">
-                         <span class="slider round"> </span>
-                    </label></li>
-                    <li><label class="switch">
-                              <label for=""> </label>
-                              <input onclick="darkmode()" type="checkbox">
-                              <span class="slider round"> </span>
-                         </label></li>
-               </ul> -->
-          </nav>
-     </div>
-     
-<!-- Flexbox container for aligning the toasts -->
-<div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100">
-
-     <!-- Then put toasts within -->
-     <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-       <div class="toast-header">
-         <img src="..." class="rounded me-2" alt="...">
-         <strong class="me-auto">Bootstrap</strong>
-         <small>11 mins ago</small>
-         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-       </div>
-       <div class="toast-body">
-         Hello, world! This is a toast message.
-       </div>
-     </div>
-   </div>
-     <!-- <div id="about-main">
-          <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem neque non expedita delectus possimus
-               modi quas dolor ipsa maiores eveniet quidem vitae tempore doloribus libero, explicabo architecto incidunt
-               consectetur natus vero placeat. Aliquam tenetur at doloremque tempore voluptates optio odio aperiam
-               expedita perspiciatis voluptatibus obcaecati dolorum natus illo possimus eveniet beatae delectus, rerum
-               placeat eum quod suscipit, voluptatem nesciunt quas doloribus. Iste perferendis adipisci ratione quam
-               unde officia odio magnam suscipit? Eveniet commodi itaque magni non, animi assumenda ipsa officiis
-               exercitationem excepturi sequi impedit tempore odio perferendis iure totam autem eius esse veniam rem
-               sunt, harum doloremque repellat quod! Culpa illo officia in expedita qui id consequatur autem nam ipsam,
-               blanditiis perferendis nulla necessitatibus tempora velit accusamus repellat temporibus facere ratione.
-               Repellat sit quidem dolor aliquam corporis voluptatibus consectetur eius expedita, inventore quam vitae
-               odio eos dolore repellendus quia reiciendis eveniet ex natus commodi assumenda a! Fugiat minus ipsum
-               provident, nemo esse maiores tempore harum maxime officiis. Rerum corrupti totam animi. Repellat,
-               voluptates? Dignissimos placeat, inventore ab, soluta tempora corrupti doloremque sit totam delectus
-               earum repellat perferendis consectetur! Fuga debitis, culpa itaque eius labore ullam veritatis delectus
-               cumque esse, odio beatae quisquam suscipit, nulla exercitationem minima vero optio autem dolore!</div>
-     </div> -->
-     
-     <div id="main">
-
-
-          <div id="textareabox" class="textinput">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/b.min.css">
+      <title>Word-Lite by Prince kumar singh</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/theme.css">
+   </head>
+   <body>
+      <div class="container-fluid">
+         <nav class="navbar navbar-light  justify-content-between">
+            <a class="navbar-brand">Word-Lite</a>
+            <label class="switch">
+            <label for=""> </label>
+            <input onclick="darkmode()" type="checkbox">
+            <span class="slider round"> </span>
+            </label>
+         </nav>
+         <div id="main">
+            <div id="textareabox" class="textinput">
                <textarea id="ptext" onkeyup="preview()" placeholder="Enter the Paragraph" cols="30"
-                    rows="10"></textarea>
-          </div>
-
-          <div id="hide">
+                  rows="10"></textarea>
+            </div>
+            <div id="hide">
                <div class="preview">
-                    <h1>Preview</h1>
-                    <p id="previewtext"></p>
+                  <h1>Preview</h1>
+                  <p id="previewtext"></p>
                </div>
                <div class="preview">
-                    <h1>Count`s</h1>
-                    <p id="counttext"></p>
+                  <h1>Count`s</h1>
+                  <p id="counttext"></p>
                </div>
-          </div>
-     </div>
-     
-     <div id="cc" class="contact">
-          <form action="" method="post">
-               <input type="text" name="" placeholder="Name" id=""><input type="text" placeholder="Contact-no" name="" id=""><input type="text" placeholder="email" name="" id="">
-               <input type="submit" value="Submit">
-          </form>
-     </div> 
-
-
-     <div id="switch_button"  class="switches">
-          <button class="mx-2 my-2 " id="activated_btn_Upper" onclick="converToUpperCase()">UpperCase</button>
-          <button class="mx-2 my-2 " id="activated_btn_Lower" onclick="lCase()">Lower Case</button>
-          <button class="mx-2 my-2 " id="activated_btn_Bold" onclick="bold()">Bold</button>
-          <button class="mx-2 my-2 " id="activated_btn_Italic" onclick="italic()">Italic</button>
-          <button class="mx-2 my-2 " id="activate_btn_clearText" onclick="clr()">Clear Text</button>
-
-
-     </div>
-
-   
-
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-          crossorigin="anonymous"></script>
-     <script src="js/script.js"></script>
-</body>
-
+            </div>
+         </div>
+         <div id="switch_button"  class="switches">
+            <button class="mx-2 my-2 custom-btn " id="activated_btn_Upper" onclick="converToUpperCase()">UpperCase</button>
+            <button class="mx-2 my-2 custom-btn " id="activated_btn_Lower" onclick="lCase()">Lower Case</button>
+            <button class="mx-2 my-2  custom-btn " id="activated_btn_Bold" onclick="bold()">Bold</button>
+            <button class="mx-2 my-2 custom-btn " id="activated_btn_Italic" onclick="italic()">Italic</button>
+            <button class="mx-2 my-2  custom-btn" id="activate_btn_clearText" onclick="clr()">Clear Text</button>
+         </div>
+      </div>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="js/script.js"></script>
+      <script src="js/theme_selector.js"></script>
+   </body>
 </html>
