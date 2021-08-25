@@ -93,19 +93,26 @@
                function bold(){
 
                enteredValue.classList.toggle("boldfont")
-               userPreviewText.classList.toggle("boldfont")
+               userPreviewText.classList.toggle("boldfont")  
+               activated_btn_Bold.classList.toggle("active-btn")
+
                alert("Text Converted into bold",2000)
+
                }
 
                function italic(){
                enteredValue.classList.toggle("italicFont")
                userPreviewText.classList.toggle("italicFont")
+               activated_btn_Italic.classList.toggle("active-btn")
+
                alert("Italic",2000)
                }
 
                function lCase(){
                enteredValue.classList.toggle("lowerCase")
                userPreviewText.classList.toggle("lowerCase")
+               activated_btn_Lower.classList.toggle("active-btn")
+
                alert("Text Converted into lower Case",2000)
                }
 
@@ -163,5 +170,5 @@
                     document.getElementById("about-main").style.display="none"
                     document.getElementById("main").style.display="none"
 
-                    document.getElementById("cc").style.display="block"
+                    document.getElementById("cc").style.display="none"
                }
