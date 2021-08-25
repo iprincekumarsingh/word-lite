@@ -21,6 +21,7 @@ body{
      top: 0;
      justify-content: space-between;
      background-color: #03203C;
+     
      /* background-color: rgb(206, 206, 206); */
 }
 .btn-disbaled{
@@ -39,6 +40,7 @@ nav{
 nav ul li{
      display: inline-block;
      align-items: center;
+     color: rgb(150, 137, 137);
 }
 nav ul li a{
 
@@ -86,6 +88,16 @@ nav ul li a{
 }
 .logo{
      color: white;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     margin-left: 10px;
+}
+.logo li{
+     text-decoration: none;
+     list-style: none;
+     color: white;
+     margin-left: 50px;
 }
 button{
      background-color: blueviolet;
@@ -247,6 +259,47 @@ margin-right: 10px;
 border: 2px solid white;
 border-radius: 5px;
    }
+   #about-main{
+        display: none;
+   }
+   .menu-link{
+        cursor: pointer;
+        color: white;
+        display: flex;
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        /* margin-right: 10px; */
+   }
+   .menu-link li{
+        margin-right: 20px;
+   }
+   #contact{
+        display: none;
+   }
+   .contact{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 100vh;
+        /* background-color: navy; */
+        margin: 0 auto;
+        position: relative;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+   }
+   #cc{
+        display: none;
+   }
+   input{
+        /* margin-top: 10px; */
+        display: flex;
+        width: 500px;
+        padding: 20px;
+   }
+   
 @media screen and (max-width:768px) {
      
      button{

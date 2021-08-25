@@ -16,6 +16,14 @@
      <div id="nav" class="navbar">
           <div class="logo">
                <h1>Word - Lite</h1>
+
+          </div>
+          <div class="menu-link">
+               <li onclick="home()">Home</li>
+               <li onclick="about()">About</li>
+               <li onclick="cc()">Contact</li>
+               
+
           </div>
 
           <nav>
@@ -33,7 +41,7 @@
                          <span class="slider round"> </span>
                     </label></div> -->
 
-                    
+
                </div>
                <!-- <ul>
                     
@@ -50,14 +58,32 @@
           </nav>
      </div>
 
-     <div class="main">
+     <div id="about-main">
+          <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem neque non expedita delectus possimus
+               modi quas dolor ipsa maiores eveniet quidem vitae tempore doloribus libero, explicabo architecto incidunt
+               consectetur natus vero placeat. Aliquam tenetur at doloremque tempore voluptates optio odio aperiam
+               expedita perspiciatis voluptatibus obcaecati dolorum natus illo possimus eveniet beatae delectus, rerum
+               placeat eum quod suscipit, voluptatem nesciunt quas doloribus. Iste perferendis adipisci ratione quam
+               unde officia odio magnam suscipit? Eveniet commodi itaque magni non, animi assumenda ipsa officiis
+               exercitationem excepturi sequi impedit tempore odio perferendis iure totam autem eius esse veniam rem
+               sunt, harum doloremque repellat quod! Culpa illo officia in expedita qui id consequatur autem nam ipsam,
+               blanditiis perferendis nulla necessitatibus tempora velit accusamus repellat temporibus facere ratione.
+               Repellat sit quidem dolor aliquam corporis voluptatibus consectetur eius expedita, inventore quam vitae
+               odio eos dolore repellendus quia reiciendis eveniet ex natus commodi assumenda a! Fugiat minus ipsum
+               provident, nemo esse maiores tempore harum maxime officiis. Rerum corrupti totam animi. Repellat,
+               voluptates? Dignissimos placeat, inventore ab, soluta tempora corrupti doloremque sit totam delectus
+               earum repellat perferendis consectetur! Fuga debitis, culpa itaque eius labore ullam veritatis delectus
+               cumque esse, odio beatae quisquam suscipit, nulla exercitationem minima vero optio autem dolore!</div>
+     </div>
+     
+     <div id="main">
 
 
           <div id="textareabox" class="textinput">
                <textarea id="ptext" onkeyup="preview()" placeholder="Enter the Paragraph" cols="30"
                     rows="10"></textarea>
           </div>
-       
+
           <div id="hide">
                <div class="preview">
                     <h1>Preview</h1>
@@ -69,10 +95,16 @@
                </div>
           </div>
      </div>
+     <div id="cc" class="contact">
+          <form action="" method="post">
+               <input type="text" name="" placeholder="Name" id=""><input type="text" placeholder="Contact-no" name="" id=""><input type="text" placeholder="email" name="" id="">
+               <input type="submit" value="Submit">
+          </form>
+     </div> 
+
 
      <div class="switches">
-          <button class="mx-2 my-2 "   id="activated_btn_Upper"
-               onclick="converToUpperCase()">UpperCase</button>
+          <button class="mx-2 my-2 " id="activated_btn_Upper" onclick="converToUpperCase()">UpperCase</button>
           <button class="mx-2 my-2 " id="activated_btn_Lower" onclick="lCase()">Lower Case</button>
           <button class="mx-2 my-2 " id="activated_btn_Bold" onclick="bold()">Bold</button>
           <button class="mx-2 my-2 " id="activated_btn_Italic" onclick="italic()">Italic</button>
@@ -81,9 +113,7 @@
 
      </div>
 
-
-     </div>
-
+   
 
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"

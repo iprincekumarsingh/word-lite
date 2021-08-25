@@ -1,19 +1,19 @@
 
                function alert (msg,timet){ document.getElementById("nav").insertAdjacentHTML("afterend",`<div id="alertmsg" class="alert alert-success" role="alert">${msg}</div>`),setTimeout(() => {document.getElementById("alertmsg").remove()}, `${timet}`);}
 
-               function notifymsg() {
-                    document.getElementById("textareabox").insertAdjacentHTML("afterend",`   <div id="n-msg">
-                    <ul>
-                         <li>The button will be visible after u enter any text</li>
-                         <li></li>
-                         <li></li>
-                         <li></li>
-                         <li></li>
-                    </ul>
-               </div>`)
+               // function notifymsg() {
+               //      document.getElementById("textareabox").insertAdjacentHTML("afterend",`   <div id="n-msg">
+               //      <ul>
+               //           <li>The button will be visible after u enter any text</li>
+               //           <li></li>
+               //           <li></li>
+               //           <li></li>
+               //           <li></li>
+               //      </ul>
+               // </div>`)
 
-               }
-               notifymsg()
+               // }
+               // notifymsg()
 
                var enteredValue =document.getElementById("ptext")
                var userPreviewText =document.getElementById("previewtext")
@@ -143,4 +143,25 @@
                     document.getElementById("ptext").style.backgroundColor="transparent"
 
  
+               }
+               function about(){
+                    document.getElementById("cc").style.display="none"
+
+                    document.getElementById("main").style.display="none"
+
+                    document.getElementById("about-main").style.display="block"
+               }
+               function home(){
+                    document.getElementById("about-main").style.display="none"
+                    document.getElementById("cc").style.display="none"
+
+                    document.getElementById("main").style.display="block"
+               }
+               function cc(){
+                    document.getElementById("main").style.display="none"
+
+                    document.getElementById("about-main").style.display="none"
+                    document.getElementById("main").style.display="none"
+
+                    document.getElementById("cc").style.display="block"
                }
