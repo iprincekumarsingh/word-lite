@@ -21,15 +21,27 @@ body{
      top: 0;
      justify-content: space-between;
      background-color: #03203C;
+     /* background-color: rgb(206, 206, 206); */
+}
+.btn-disbaled{
+     transition: 1s;
+     display: none;
+}
+#n-msg{
+     padding: 20px;
 }
 nav{
+     align-items: center;
+     display: inline-block;
      position: sticky;
      top: 0;
 }
 nav ul li{
      display: inline-block;
+     align-items: center;
 }
 nav ul li a{
+
      color: white;
      margin-right: 10px;
      font-size: 20px;
@@ -62,6 +74,7 @@ nav ul li a{
      height: 100%;
      font-size: 18px;
 }
+
 .switches{
      margin: 10px;
      align-items: center;
@@ -76,7 +89,6 @@ nav ul li a{
 }
 button{
      background-color: blueviolet;
-     /* width: 200px; */
      padding: 20px 100px;
      border-radius: 10px;
      border: none;
@@ -173,7 +185,7 @@ display: flex;
      transition: .4s;
    }
    
-   input:checked + .slider {
+   input:checked + .slider,b {
      background-color: #2196F3;
    }
    
@@ -198,6 +210,42 @@ display: flex;
    .point ul li{
         margin: 20px;
      list-style-type: square;
+   }
+   .blue{
+        
+        background-color: blue;
+      
+   }
+   .black{
+     width: 30px;
+     height: 30px;
+     
+     background-color: #242B2E;
+   }
+   .yellow{
+     width: 30px;
+     height: 30px;
+   
+     background-color: yellow;
+}
+   .color{
+        display: flex;
+       
+   }
+   .white{
+        background-color: white;
+   }
+   .pink{
+        background-color: palevioletred;
+        color: white;
+   }
+   .mr-10px{
+     cursor: pointer;
+     width: 30px;
+     height: 30px;
+margin-right: 10px;
+border: 2px solid white;
+border-radius: 5px;
    }
 @media screen and (max-width:768px) {
      
@@ -237,4 +285,8 @@ display: flex;
        
       }
      
+      .navbar{
+           flex-direction: column;
+           align-items: center;
+      }
 }

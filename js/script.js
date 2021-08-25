@@ -1,110 +1,146 @@
-     function converToUpperCase() {
-     document.getElementById("ptext").classList.toggle("upperCase")
-   
 
-     document.getElementById("previewtext").classList.toggle("upperCase")
-     // document.getElementById("activated_btn_Upper").classList.toggle("active-btn")
-     
- document.getElementById("nav").insertAdjacentHTML("afterend",`<div id="alertmsg" class="alert alert-success" role="alert">
- Text converted into UpperCase
-</div>`)
+               function alert (msg,timet){ document.getElementById("nav").insertAdjacentHTML("afterend",`<div id="alertmsg" class="alert alert-success" role="alert">${msg}</div>`),setTimeout(() => {document.getElementById("alertmsg").remove()}, `${timet}`);}
 
-setTimeout(() => {
-     document.getElementById("alertmsg").remove();
+               function notifymsg() {
+                    document.getElementById("textareabox").insertAdjacentHTML("afterend",`   <div id="n-msg">
+                    <ul>
+                         <li>The button will be visible after u enter any text</li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                         <li></li>
+                    </ul>
+               </div>`)
 
-}, 2000);
+               }
+               notifymsg()
 
-     // var ccc = document.getElementById("ptext").value = c
-     // console.log(ccc);
-     }
-     function preview() {
-     var x = document.getElementById("ptext").value
-     var y = document.getElementById("previewtext")
-     y.innerText = x
-     var cv =x.length;
-     console.log(cv);
-     document.getElementById("counttext").innerText=cv+" letter";
-     }
+               var enteredValue =document.getElementById("ptext")
+               var userPreviewText =document.getElementById("previewtext")
+               var activated_btn_Upper=  document.getElementById("activated_btn_Upper")
+               var activated_btn_Lower =document.getElementById("activated_btn_Lower")
+               var activated_btn_Bold =document.getElementById("activated_btn_Bold")
+               var activated_btn_Italic = document.getElementById("activated_btn_Italic")
+               var  activate_btn_clearText =  document.getElementById("activate_btn_clearText")
+               var hidePreview = document.getElementById("hide")
 
-     var isEmpty = document.getElementById("ptext").value
-     if (isEmpty === "") {
-     document.getElementById("previewtext").innerText = "Enter a word or Text to be fiiled "
-     }
 
-     var checklength = document.getElementById("counttext").value
-     if(checklength ===""){
-          document.getElementById("counttext").value="You haven`t enter a word"
-     }
-     function clr() {
-     document.getElementById("ptext").value = ""
-     document.getElementById("previewtext").innerText = ""
-     document.getElementById("counttext").innerText=""+0+" Word"
-     document.getElementById("nav").insertAdjacentHTML("afterend",`<div id="alertmsg" class="alert alert-success" role="alert">
-     Text Cleared 
-    </div>`)
-    
-    setTimeout(() => {
-         document.getElementById("alertmsg").remove();
-    
-    }, 2000);
-     }
-     function darkmode(){
-          document.body.classList.toggle("dark-mode")
-          document.getElementById("nav").classList.toggle("nav-dark")
-          document.getElementById("nav").insertAdjacentHTML("afterend",`<div id="alertmsg" class="alert alert-success" role="alert">
-        Theme Changed
-         </div>`)
-         
-         setTimeout(() => {
-              document.getElementById("alertmsg").remove();
-         
-         }, 2000);
-     }
-     function bold(){
-          var boldtext = document.getElementById("ptext")
-          boldtext.classList.toggle("boldfont")
-          document.getElementById("previewtext").classList.toggle("boldfont")
-          // document.getElementById("activated_btn_Bold").classList.toggle("active-btn")
-          document.getElementById("nav").insertAdjacentHTML("afterend",`<div id="alertmsg" class="alert alert-success" role="alert">
-          Text converted into Bold
-         </div>`)
-         
-         setTimeout(() => {
-              document.getElementById("alertmsg").remove();
-         
-         }, 2000);
+               activate_btn_clearText.classList.add("btn-disbaled");
+               activated_btn_Upper.classList.add("btn-disbaled");
+               activated_btn_Lower.classList.add("btn-disbaled");
+               activated_btn_Bold.classList.add("btn-disbaled");
+               activated_btn_Italic.classList.add("btn-disbaled"); 
+               hidePreview.classList.add("btn-disbaled")
+               userPreviewText.innerText="Text Box is empty"
+              
+              
 
-     }
-     function italic(){
-          document.getElementById("ptext").classList.toggle("italicFont")
-          document.getElementById("previewtext").classList.toggle("italicFont")
-          // document.getElementById("activated_btn_Italic").classList.toggle("active-btn")
 
-          // activated_btn_Italic
-          document.getElementById("nav").insertAdjacentHTML("afterend",`<div id="alertmsg" class="alert alert-success" role="alert">
-          Text converted into Italic
-         </div>`)
-         
-         setTimeout(() => {
-              document.getElementById("alertmsg").remove();
-         
-         }, 2000);
-     
-     }
-     
-     function lCase(){
-          document.getElementById("ptext").classList.toggle("lowerCase")
-          document.getElementById("previewtext").classList.toggle("lowerCase")
-          // document.getElementById("activated_btn_Lower").classList.toggle("active-btn")
-          // document.getElementById("activated_btn_Lower").innerText="Active"
-          document.getElementById("nav").insertAdjacentHTML("afterend",`<div id="alertmsg" class="alert alert-success" role="alert">
-          Text converted into LowerCase
-         </div>`)
-         
-         setTimeout(() => {
-              document.getElementById("alertmsg").remove();
-         
-         }, 2000);
+               function preview() {
+               var enteredTextByTheUser = document.getElementById("ptext").value
+               var preview_of_Entered_Text = document.getElementById("previewtext")
+               var text_Length =enteredTextByTheUser.length;
+               document.getElementById("counttext").innerText=text_Length+" Characters";
+
+               if (enteredTextByTheUser === "" ) {
+                    activated_btn_Upper.classList.add("btn-disbaled");
+               activate_btn_clearText.classList.add("btn-disbaled");
+               activated_btn_Upper.classList.add("btn-disbaled");
+               activated_btn_Lower.classList.add("btn-disbaled");
+               activated_btn_Bold.classList.add("btn-disbaled");
+               activated_btn_Italic.classList.add("btn-disbaled"); 
+               preview_of_Entered_Text.innerText="Text Box is empty" 
+               // hidePreview.classList.add("btn-disbaled")
+  
+               }
+               else{
+                    preview_of_Entered_Text.innerText = enteredTextByTheUser
           
-          // document.getElementById("previewtext").classList.toggle("lowerCase")
-     }
+                    activate_btn_clearText.classList.remove("btn-disbaled");
+                    activated_btn_Upper.classList.remove("btn-disbaled");
+                    activated_btn_Lower.classList.remove("btn-disbaled");
+                    hidePreview.classList.remove("btn-disbaled")
+                    activated_btn_Bold.classList.remove("btn-disbaled");
+                    activated_btn_Italic.classList.remove("btn-disbaled");
+                    document.getElementById("n-msg").remove()
+               }
+
+               }
+               function converToUpperCase() {
+                    enteredValue.classList.toggle("upperCase")
+                    userPreviewText.classList.toggle("upperCase")
+                    alert("Text Converted into bold",2000)
+                    activated_btn_Upper.classList.toggle("active-btn")
+
+               }
+
+               function clr() {
+               enteredValue.value = ""
+               userPreviewText.innerText = ""
+               document.getElementById("counttext").innerText=""+0+" Characters"
+               alert("Text Cleared",2000)
+               }
+
+               // Dark mode function
+               function darkmode(){
+                    document.body.style.removeProperty("background-color")
+
+               document.body.classList.toggle("dark-mode")
+               document.getElementById("nav").classList.toggle("nav-dark")
+               alert("Theme enabled",2000)
+               }
+
+               function bold(){
+
+               enteredValue.classList.toggle("boldfont")
+               userPreviewText.classList.toggle("boldfont")
+               alert("Text Converted into bold",2000)
+               }
+
+               function italic(){
+               enteredValue.classList.toggle("italicFont")
+               userPreviewText.classList.toggle("italicFont")
+               alert("Italic",2000)
+               }
+
+               function lCase(){
+               enteredValue.classList.toggle("lowerCase")
+               userPreviewText.classList.toggle("lowerCase")
+               alert("Text Converted into lower Case",2000)
+               }
+
+               function bluee(){
+                    document.body.style.removeProperty("background-color")
+                  console.log("color");
+                  document.body.style.backgroundColor="blue"
+                  document.body.style.color="white"
+                  document.getElementById("ptext").style.color="white"
+                  document.getElementById("ptext").style.backgroundColor="transparent"
+               }
+               function white(){
+                    document.body.style.removeProperty("background-color")
+                    document.body.style.backgroundColor="transparent"
+                    document.body.style.color="black"
+                    document.getElementById("ptext").style.color="black"
+               }
+               function yellow(){
+                    document.body.style.removeProperty("background-color")
+                    document.body.style.backgroundColor="yellow"
+                    document.body.style.color="black"
+                    document.getElementById("ptext").style.color="black"
+               }
+               function black(){
+                    document.body.style.removeProperty("background-color")
+                    document.body.style.backgroundColor="#242B2E"
+                    document.body.style.color="white"
+                    document.getElementById("ptext").style.color="black"
+               }
+               function pink(){
+                    document.body.style.removeProperty("background-color")
+                    document.body.style.backgroundColor="pink"
+                    document.body.style.color="black"
+                    document.getElementById("ptext").style.color="black"
+                    document.getElementById("ptext").style.backgroundColor="transparent"
+
+ 
+               }
